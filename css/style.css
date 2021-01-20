@@ -1,0 +1,334 @@
+/* zeroing */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/* site */
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.header__body {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+.header__logo {
+  flex: 0 0 30px; /* border-radius: 50%; display: block; */
+}
+.header__burger {
+  display: none;
+}
+.header__menu {
+}
+.header__list {
+  display: flex;
+}
+.header__list li {
+  margin: 0 0 0 20px;
+}
+.header__link {
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.content {
+  margin-top: 100px;
+}
+.text {
+}
+.container {
+  max-width: 1180px;
+  margin: 0px auto;
+  padding: 0px 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+  .header__burger::before,
+  .header__burger::after {
+    background-color: #fff;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+
+  .header__burger::before {
+  }
+
+  .header__burger::after {
+  }
+}
+
+.header__list a {
+  color: #393c41;
+  font-weight: 600;
+  position: relative;
+}
+
+.block__sticky {
+  position: relative;
+  top: -100px;
+}
+
+.block1 {
+  margin-top: 50px;
+  position: absolute;
+  z-index: 20;
+  padding-top: 150px;
+  width: 100%;
+  top: 0;
+}
+
+.block1__text {
+  display: flex;
+  justify-content: center;
+}
+.block1__text h1 {
+  font-size: 35px;
+  color: #393c41;
+  font-weight: 600;
+}
+.block1__guarantee {
+  display: flex;
+  justify-content: center;
+}
+.block1__guarantee h3 {
+  font-size: 15px;
+  margin-top: 10px;
+  color: #393c41;
+}
+
+.img__pagehome {
+  position: relative;
+  text-align: center;
+  top: 0;
+  z-index: -5;
+}
+
+/* Tesla Model S */
+.block__sticky2 {
+  position: relative;
+  top: 100px;
+}
+.block2 {
+  position: absolute;
+  z-index: 20;
+  padding-top: 0px;
+  width: 100%;
+  top: 100px;
+}
+.block2__text {
+  display: flex;
+  justify-content: center;
+}
+.block2__text h1 {
+  font-size: 35px;
+  color: #393c41;
+  font-weight: 600;
+}
+.block1__price {
+  display: flex;
+  justify-content: center;
+}
+.block1__price h3 {
+  font-size: 15px;
+  margin-top: 10px;
+  color: #393c41;
+}
+/* Tesla Model X */
+.block__sticky3 {
+  position: relative;
+  top: 0px;
+}
+.block3 {
+  position: absolute;
+  z-index: 20;
+  padding-top: 0px;
+  width: 100%;
+  top: 100px;
+}
+.block3__text {
+  display: flex;
+  justify-content: center;
+}
+.block3__text h1 {
+  font-size: 35px;
+  color: white;
+  font-weight: 600;
+}
+
+.order__online {
+  display: flex;
+  justify-content: center;
+}
+.order__online h3,
+a {
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+}
+/* Tesla Model y */
+.block__sticky4 {
+  position: relative;
+  top: 0px;
+}
+.block4 {
+  position: absolute;
+  z-index: 20;
+  padding-top: 0px;
+  width: 100%;
+  top: 100px;
+}
+.block4__text {
+  display: flex;
+  justify-content: center;
+}
+.block4__text h1 {
+  font-size: 35px;
+  color: #393c41;
+  font-weight: 600;
+}
+
+.order__online2 {
+  display: flex;
+  justify-content: center;
+}
+.order__online2 h3,
+a {
+  color: #393c41;
+  font-size: 15px;
+  margin-top: 10px;
+}
+/* tesla roof  */
+.block__sticky5 {
+  position: relative;
+  top: 0px;
+}
+.block5 {
+  position: absolute;
+  z-index: 20;
+  padding-top: 0px;
+  width: 100%;
+  top: 100px;
+}
+.block5__text {
+  display: flex;
+  justify-content: center;
+}
+.block5__text h1 {
+  font-size: 35px;
+  color: #393c41;
+  font-weight: 600;
+}
+
+.roof {
+  display: flex;
+  justify-content: center;
+}
+.roof h3,
+a {
+  color: #fff;
+  font-size: 15px;
+  margin-top: 10px;
+}
